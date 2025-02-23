@@ -49,8 +49,8 @@ The dataset comes from the **Kaggle NYC Taxi Trip Duration competition** and inc
 ✔ **Date and Time-Based Features Are Crucial**  
   **Time-based features** (hour, weekday, etc.) showed significant influence on trip duration. **Peak hours** such as rush hour (morning and evening) were correlated with longer durations. Therefore, extracting **hour**, **minute**, **day of the week**, and **month** from the datetime columns was essential.
 
-✔ **Geospatial Features Need to Be Captured Effectively**  
-  **Pickup and dropoff locations** have a substantial impact on the duration. While latitude and longitude features were used directly, **clustering** these locations into groups or using techniques like **KNN** helped capture regional patterns, leading to better estimations.
+✔ **Removing Outliers Leads To Better Prediction**  
+  **Outliers** can significantly distort model predictions by introducing noise and skewing relationships between variables. By identifying and removing extreme values, the model can learn patterns more effectively, leading to improved accuracy and generalization. This preprocessing step enhances the model’s ability to make reliable predictions on unseen data.
 
 
 ## 🚀 Next Steps & Improvements
